@@ -7,4 +7,4 @@ sudo apt-get update
 sudo apt-get -y install cuda-toolkit-13-2
 
 
-export LD_LIBRARY_PATH=$(find .venv -name "*.so*" | grep nvidia | xargs dirname | sort -u | paste -d ":" -s -)
+export LD_LIBRARY_PATH=$(find {{venv name}} -name "*.so*" | grep nvidia | xargs dirname | sort -u | paste -d ":" -s -)
